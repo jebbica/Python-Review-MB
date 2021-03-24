@@ -16,10 +16,20 @@ create 3 different variables with any whole number assined as the value and conv
 once you convert them print out the variables. Example: convert 3 to '3'
 if you use print(type(<var_name>)) this will print out the type of variable for example x = 3 would print 'int' and x = '3' would print 'str'
 '''
-num1 = str(3243)
-num2 = str(4849)
-num3 = str(42069)
+# num1 = str(3243)
+# num2 = str(4849)
+# num3 = str(42069)
 
-print(num1, type(num1))
-print(num2)
-print(num3)
+# print(num1, type(num1))
+# print(num2)
+# print(num3)
+
+'''
+3.
+Write a program that asks the user for the current temperature (F) and then use their Input calculate temperature in (C). 
+Here is the formula to conver F to C => C = (Fahrenheit - 32) * 5.0/9.0
+Once you calculate Celcius print out the conversion to the user
+'''
+current_temp = int(input("What is the current temperature in faren-i-cant-spell-this-heit? "))
+celcius = (current_temp - 32) * 5.0/9.0
+print(f"The Celcius temperature (who even like C) is: {celcius} degrees. ")
