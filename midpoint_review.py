@@ -49,9 +49,34 @@ End of February = 110.25
 End of March = $115.76...
 End of Decemeber...
 '''
-savings = int(input("How many money in da bank? "))
-growth_rate = int(input("What da growth rate be? "))
-months = ['Janurary', 'February', 'March', 'April', 'May','June','July','August','September','October','November','December']
-for x in months:
-    savings = savings * (1+(growth_rate/100))
-    print(f"End of {x} = ${savings}")
+# savings = int(input("How many money in da bank? "))
+# growth_rate = int(input("What da growth rate be? "))
+# months = ['Janurary', 'February', 'March', 'April', 'May','June','July','August','September','October','November','December']
+# for x in months:
+#     savings = savings * (1+(growth_rate/100))
+#     print(f"End of {x} = ${savings}")
+
+'''
+4b.
+Now take the code you wrote for problem 4a and put it in a function called calc_investment(). It should take two parameters:
+the users savings and the growth rate. So it would look something like def calc_investment(savings, growth_rate):
+Once you have the function created call this function in your main with different savings and growth rate. 
+If you are unsure how to 'call' a function. All you have to do is type it out in your main.
+Example: 
+def main():
+  calc_investment(100, 6) # salary = 100 & growth_rate = 6
+  calc_investment(1850, 4.5)
+
+main()
+'''
+def calc_investment(savings, growth_rate):
+    months = ['Janurary', 'February', 'March', 'April', 'May','June','July','August','September','October','November','December']
+    for x in months:
+        savings = savings * (1+(growth_rate/100))
+        print(f"End of {x} = ${savings}")  
+def main():
+    calc_investment(100, 5)
+    print()
+    calc_investment(3167,99.8)
+
+main()
