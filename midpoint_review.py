@@ -30,6 +30,28 @@ Write a program that asks the user for the current temperature (F) and then use 
 Here is the formula to conver F to C => C = (Fahrenheit - 32) * 5.0/9.0
 Once you calculate Celcius print out the conversion to the user
 '''
-current_temp = int(input("What is the current temperature in faren-i-cant-spell-this-heit? "))
-celcius = (current_temp - 32) * 5.0/9.0
-print(f"The Celcius temperature (who even like C) is: {celcius} degrees. ")
+# current_temp = int(input("What is the current temperature in faren-i-cant-spell-this-heit? "))
+# celcius = (current_temp - 32) * 5.0/9.0
+# print(f"The Celcius temperature (who even like C) is {celcius} degrees. ")
+
+'''
+4a.
+Hint: You can solve this problem without a forloop, but if you can figure it out using a for loop try to do it that way
+Write a program that asks the user to input how much money they have saved up. 
+Then ask the user to input a monthly growth rate (%) example: 5% would mean their savings would increase by 5% monthly. 
+Calculate how much the user would have at the end of each month for 12 months & print it all to the user
+Example: 
+savings = 100
+growth_rate = 5%
+
+End of Januaray = $105
+End of February = 110.25
+End of March = $115.76...
+End of Decemeber...
+'''
+savings = int(input("How many money in da bank? "))
+growth_rate = int(input("What da growth rate be? "))
+months = ['Janurary', 'February', 'March', 'April', 'May','June','July','August','September','October','November','December']
+for x in months:
+    savings = savings * (1+(growth_rate/100))
+    print(f"End of {x} = ${savings}")
